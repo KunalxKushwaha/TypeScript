@@ -1,2 +1,2 @@
 # Heyy Heyy!!
-Here I am Learning and Practicing Some of my skills on TypeScript.<br>
+Here I am Learning and Polishing Some of my skills on TypeScript.<br>
