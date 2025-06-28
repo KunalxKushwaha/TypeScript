@@ -21,4 +21,4 @@ interface Employee extends Person {
 function abcd(obj : Employee) {
 }
 
-abcd({name : "sushant", age: 23, gender : "male"});
+abcd({name : "sushant", age: 23, gender : "male", empId: 101});
