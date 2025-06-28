@@ -17,4 +17,4 @@ interface Person {
 function abcd(obj : Person) {
 }
 
-abcd({name : "sushant", age: 23,}); // This will not throw an error because 'city' is not a required property in the interface
+abcd({name : "sushant", age: 23, gender : "male"});
