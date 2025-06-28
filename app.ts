@@ -14,6 +14,10 @@ interface Person {
     gender?: string; // optional property
 }
 
+interface Employee extends Person {
+    empId: number;
+}
+
 function abcd(obj : Person) {
 }
 
