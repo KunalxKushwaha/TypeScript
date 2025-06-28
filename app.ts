@@ -15,10 +15,10 @@ interface Person {
 }
 
 interface Employee extends Person {
-    empId: number;
+    empId?: number;
 }
 
-function abcd(obj : Person) {
+function abcd(obj : Employee) {
 }
 
 abcd({name : "sushant", age: 23, gender : "male"});
