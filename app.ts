@@ -22,3 +22,11 @@ function abcd(obj : Employee) {
 }
 
 abcd({name : "sushant", age: 23, gender : "male", empId: 101});
+
+class Device{
+    name = "LG";
+    price = 1000;
+    Model = "LG-1234";
+}
+
+let D1 = new Device();
