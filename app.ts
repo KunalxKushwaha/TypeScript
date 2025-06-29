@@ -48,3 +48,4 @@ class Music {
 }
 
 let m1 = new Music("Ek raat", "Vilen", 120,"", true);
+m1.name = "Churake";
