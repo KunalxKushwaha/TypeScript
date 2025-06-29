@@ -37,5 +37,14 @@ class BottleMaker{
 
     }
 }
-
 const b1 = new BottleMaker("Milton", 1223);
+
+class Music {
+    constructor(public name: string, public artist : string, public lenght : number, public thumbnail : string = "SVG.png",public isfree: boolean) {
+        if(!thumbnail){
+            this.thumbnail = "default.png"; // default value if thumbnail is not provided
+        }
+    }
+}
+
+let m1 = new Music("Ek raat", "Vilen", 120,"", true);

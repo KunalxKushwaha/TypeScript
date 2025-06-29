@@ -18,3 +18,16 @@ class BottleMaker {
     }
 }
 const b1 = new BottleMaker("Milton", 1223);
+class Music {
+    constructor(name, artist, lenght, thumbnail = "SVG.png", isfree) {
+        this.name = name;
+        this.artist = artist;
+        this.lenght = lenght;
+        this.thumbnail = thumbnail;
+        this.isfree = isfree;
+        if (!thumbnail) {
+            this.thumbnail = "default.png"; // default value if thumbnail is not provided
+        }
+    }
+}
+let m1 = new Music("Ek raat", "Vilen", 120, "", true);
