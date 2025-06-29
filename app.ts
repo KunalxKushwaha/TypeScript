@@ -30,3 +30,4 @@ class Device{
 }
 
 let D1 = new Device();
+let D2 = new Device();
