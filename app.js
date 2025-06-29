@@ -11,3 +11,10 @@ class Device {
 }
 let D1 = new Device();
 let D2 = new Device();
+class BottleMaker {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+const b1 = new BottleMaker("Milton", 1223);

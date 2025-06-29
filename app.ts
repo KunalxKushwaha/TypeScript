@@ -31,3 +31,11 @@ class Device{
 
 let D1 = new Device();
 let D2 = new Device();
+
+class BottleMaker{
+    constructor(public name: string , public price: number){
+
+    }
+}
+
+const b1 = new BottleMaker("Milton", 1223);
