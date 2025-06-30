@@ -51,3 +51,11 @@ let m1 = new Music("Ek raat", "Vilen", 120,"", true);
 m1.name = "Churake";
 let m2 = new Music("Tum mile", "Neha Kakkar", 150, "tum_mile.png", false);
 m2.lenght = 230;
+
+class Human {
+    constructor(public name: string, public age: number, public height: number, public weight: number) {
+
+    }
+}
+
+let h1 = new Human("Sushant", 23, 5.8, 70);
