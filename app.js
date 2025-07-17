@@ -12,12 +12,16 @@ class Device {
 let D1 = new Device();
 let D2 = new Device();
 class BottleMaker {
-    constructor(name, price) {
+    constructor(name, price, material = "Plastic") {
         this.name = name;
         this.price = price;
+        this.material = material;
+        if (!material) {
+            this.material = "Glass"; // default value if material is not provided
+        }
     }
 }
-const b1 = new BottleMaker("Milton", 1223);
+const b1 = new BottleMaker("Milton", 1223, "");
 class Music {
     constructor(name, artist, lenght, thumbnail = "SVG.png", isfree) {
         this.name = name;

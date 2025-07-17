@@ -33,11 +33,14 @@ let D1 = new Device();
 let D2 = new Device();
 
 class BottleMaker{
-    constructor(public name: string , public price: number){
+    constructor(public name: string , public price: number, public material: string = "Plastic") {
+        if(!material){
+            this.material = "Glass"; // default value if material is not provided
+        }
 
     }
 }
-const b1 = new BottleMaker("Milton", 1223);
+const b1 = new BottleMaker("Milton", 1223, "");
 
 class Music {
     constructor(public name: string, public artist : string, public lenght : number, public thumbnail : string = "SVG.png",public isfree: boolean) {
