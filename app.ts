@@ -63,3 +63,5 @@ class Human {
 
 let h1 = new Human("Sushant", 23, 5.8, 70);
 h1.name = "Sushant Kumar";
+
+// Access Modifiers..
