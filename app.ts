@@ -67,14 +67,14 @@ h1.name = "Sushant Kumar";
 // Access Modifiers..
 
 class User{
-    constructor(public name: string, public age: number, private password: string, protected email: string) {
+    constructor(public _name: string, public age: number, private password: string, protected email: string) {
 }
 
-    getName() {
-        return this.name;
+    get name() {
+        return this._name;
     }
-    setName(value: string) {
-        this.name = value;
+    set name(value: string) {
+        this._name = value;
     }
 
 }
