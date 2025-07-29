@@ -65,3 +65,18 @@ let h1 = new Human("Sushant", 23, 5.8, 70);
 h1.name = "Sushant Kumar";
 
 // Access Modifiers..
+
+class User{
+    constructor(public name: string, public age: number, private password: string, protected email: string) {
+}
+
+    getName() {
+        return this.name;
+    }
+    setName(value: string) {
+        this.name = value;
+    }
+
+}
+
+ let u1 = new User("Sushant", 23, "12345", "xyz@123gmail.com");
