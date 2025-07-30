@@ -83,3 +83,7 @@ abcdef("Sushant", 23, (msg) => {
     console.log(msg);
     console.log("Callback function executed");
 });
+function Identity(name, age, gender = "Not to be Disclosed") {
+}
+Identity("Kunal Kushwaha", 20, "Male");
+Identity("Lababdar", 10);
