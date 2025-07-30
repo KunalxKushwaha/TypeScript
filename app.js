@@ -84,6 +84,7 @@ class paytm extends Payments {
 //     console.log("Callback function executed");
 //  });
 function Identity(name, age, gender = "Not to be Disclosed") {
+    console.log(name, age, gender);
 }
 Identity("Kunal Kushwaha", 20, "Male");
 Identity("Lababdar", 10);
