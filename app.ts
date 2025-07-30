@@ -87,6 +87,7 @@ class User{
     isPaymentValid(amount: number) {
         return this.amount >= 0;
     }
+    //Never be Instantiated
  }
 
  class paytm extends Payments{
