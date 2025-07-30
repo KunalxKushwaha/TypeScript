@@ -76,13 +76,13 @@ class Payments {
 }
 class paytm extends Payments {
 }
-function abcdef(name, age, cb) {
-    cb("Hey!!");
-}
-abcdef("Sushant", 23, (msg) => {
-    console.log(msg);
-    console.log("Callback function executed");
-});
+//  function abcdef(name : string , age: number, cb : (msg: string) => void ) {
+//     cb("Hey!!");
+//  }
+//  abcdef("Sushant", 23, (msg: string) => {
+//     console.log(msg);
+//     console.log("Callback function executed");
+//  });
 function Identity(name, age, gender = "Not to be Disclosed") {
 }
 Identity("Kunal Kushwaha", 20, "Male");
