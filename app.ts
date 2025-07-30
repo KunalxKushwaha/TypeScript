@@ -94,7 +94,7 @@ class User{
     // Abstract Class...
  }
 
- function abcdef(name : string , age: number, cb : (msg: string) => void) {
+ function abcdef(name : string , age: number, cb : (msg: string) => void ) {
     cb("Hey!!");
 
  }
@@ -103,3 +103,4 @@ class User{
     console.log(msg);
     console.log("Callback function executed");
  });
+
