@@ -80,3 +80,15 @@ class User{
 }
 
  let u1 = new User("Sushant", 23, "12345", "xyz@123gmail.com");
+
+ class Payments {
+    constructor(public account : string , public amount : number, private _pin: string) {
+    }
+    isPaymentValid(amount: number) {
+        return this.amount >= 0;
+    }
+ }
+
+ class paytm extends Payments{
+    // Abstract Class...
+ }
