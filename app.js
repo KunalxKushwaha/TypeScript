@@ -76,3 +76,10 @@ class Payments {
 }
 class paytm extends Payments {
 }
+function abcdef(name, age, cb) {
+    cb("Hey!!");
+}
+abcdef("Sushant", 23, (msg) => {
+    console.log(msg);
+    console.log("Callback function executed");
+});

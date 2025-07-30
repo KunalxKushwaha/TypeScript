@@ -93,3 +93,13 @@ class User{
  class paytm extends Payments{
     // Abstract Class...
  }
+
+ function abcdef(name : string , age: number, cb : (msg: string) => void) {
+    cb("Hey!!");
+
+ }
+
+ abcdef("Sushant", 23, (msg: string) => {
+    console.log(msg);
+    console.log("Callback function executed");
+ });
