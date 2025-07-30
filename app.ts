@@ -104,3 +104,9 @@ class User{
     console.log("Callback function executed");
  });
 
+function Identity (name : string, age : number , gender : string = "Not to be Disclosed") {
+
+}
+
+Identity("Kunal Kushwaha",20, "Male");
+Identity("Lababdar", 10);
