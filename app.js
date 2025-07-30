@@ -64,3 +64,15 @@ class User {
     }
 }
 let u1 = new User("Sushant", 23, "12345", "xyz@123gmail.com");
+class Payments {
+    constructor(account, amount, _pin) {
+        this.account = account;
+        this.amount = amount;
+        this._pin = _pin;
+    }
+    isPaymentValid(amount) {
+        return this.amount >= 0;
+    }
+}
+class paytm extends Payments {
+}
