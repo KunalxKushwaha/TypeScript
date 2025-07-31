@@ -94,15 +94,17 @@ class User{
     // Abstract Class...
  }
 
-//  function abcdef(name : string , age: number, cb : (msg: string) => void ) {
-//     cb("Hey!!");
 
-//  }
+ // Functions.......
+ function abcdef(name : string , age: number, cb : (msg: string) => void ) {
+    cb("Hey!!");
 
-//  abcdef("Sushant", 23, (msg: string) => {
-//     console.log(msg);
-//     console.log("Callback function executed");
-//  });
+ }
+
+ abcdef("Sushant", 23, (msg: string) => {
+    console.log(msg);
+    console.log("Callback function executed");
+ });
 
 function Identity (name : string, age : number , gender : string = "Not to be Disclosed") {
     console.log(name,age,gender);
