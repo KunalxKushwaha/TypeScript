@@ -76,6 +76,7 @@ class Payments {
 }
 class paytm extends Payments {
 }
+// Functions.......
 function abcdef(name, age, cb) {
     cb("Hey!!");
 }
@@ -88,3 +89,9 @@ function Identity(name, age, gender = "Not to be Disclosed") {
 }
 Identity("Kunal Kushwaha", 20, "Male");
 Identity("Lababdar", 10);
+// rest operator...
+function sum(...args) {
+    console.log(args);
+}
+sum(1, 2, 3, 4, 5, 56, 6, 7, 7, 8, 8, 8, 4);
+// Function Overloading...

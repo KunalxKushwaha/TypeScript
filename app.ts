@@ -113,3 +113,13 @@ function Identity (name : string, age : number , gender : string = "Not to be Di
 
 Identity("Kunal Kushwaha",20, "Male");
 Identity("Lababdar", 10);
+
+
+// rest operator...
+function sum(...args: number[]){
+        console.log(args);
+}
+
+sum(1,2,3,4,5,56,6,7,7,8,8,8,4);
+
+// Function Overloading...
