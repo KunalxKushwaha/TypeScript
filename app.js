@@ -94,4 +94,17 @@ function sum(...args) {
     console.log(args);
 }
 sum(1, 2, 3, 4, 5, 56, 6, 7, 7, 8, 8, 8, 4);
-// Function Overloading...
+function ABCD(a, b) {
+    if (typeof a === "string" && b === undefined) {
+        console.log("String function called");
+    }
+    else if (typeof a === "string" && typeof b === "number") {
+        console.log("String and Number function called");
+        return 10;
+    }
+    else {
+        console.log("Invalid function call");
+    }
+}
+ABCD("Hello");
+ABCD("Hello", 10);
