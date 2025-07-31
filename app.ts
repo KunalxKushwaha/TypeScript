@@ -141,3 +141,5 @@ function ABCD(a:any, b?: any) {
 
 ABCD("Hello");
 ABCD("Hello", 10);
+
+// Generics...
