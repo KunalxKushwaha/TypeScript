@@ -108,3 +108,9 @@ function ABCD(a, b) {
 }
 ABCD("Hello");
 ABCD("Hello", 10);
+// Generics...
+function hal(a) {
+}
+hal("Hello");
+hal(10);
+;
