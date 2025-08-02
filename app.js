@@ -108,9 +108,22 @@ function ABCD(a, b) {
 }
 ABCD("Hello");
 ABCD("Hello", 10);
-// Generics...
+// Generics Function...
 function hal(a) {
 }
 hal("Hello");
 hal(10);
-;
+function halua(obj) {
+    obj.name = "Sushant";
+    obj.price = 100;
+    obj.key.codePointAt(0); // Example usage of key
+}
+halua({ name: "Sushant", price: 100, key: "abcjcdhd" });
+//Generics Class
+class Bottle {
+    constructor(key) {
+        this.key = key;
+    }
+}
+let b5 = new Bottle("Hello");
+console.log(b5);

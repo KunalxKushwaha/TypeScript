@@ -163,3 +163,12 @@ function halua(obj:Halua<string>){
     obj.key.codePointAt(0); // Example usage of key
 }
 halua({name: "Sushant", price: 100, key: "abcjcdhd"});
+
+//Generics Class
+
+class Bottle <T>{
+    constructor(public key:T){}
+}
+
+let b5 = new Bottle<string>("Hello");
+console.log(b5);
