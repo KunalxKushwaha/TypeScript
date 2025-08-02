@@ -188,4 +188,21 @@ let a : any = "Hello";
 (<number>a); // Type assertion to treat 'a' as a number
 
 let b = Number("123");
-console.log(b);
+console.log(typeof(b));
+
+//Type Guards
+
+function check(a: string | number| any) {
+    if(typeof a === "string") {
+        console.log("String type");
+    }
+     else if(typeof a === "number") {
+        console.log("Number type");
+    } else {
+        throw new Error("Invalid type");
+    }
+}
+
+check("Hello");
+check(123);
+check(true);
