@@ -142,10 +142,24 @@ function ABCD(a:any, b?: any) {
 ABCD("Hello");
 ABCD("Hello", 10);
 
-// Generics...
+// Generics Function...
 function hal<H>(a: H) {
 }
 
 hal<String>("Hello");
 hal<number>(10);
-;
+
+
+//Inerfaces
+interface Halua <T>{
+    name: string;
+    price: number;
+    key : T;
+}
+
+function halua(obj:Halua<string>){
+    obj.name = "Sushant";
+    obj.price = 100;
+    obj.key.codePointAt(0); // Example usage of key
+}
+halua({name: "Sushant", price: 100, key: "abcjcdhd"});
