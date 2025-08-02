@@ -177,3 +177,7 @@ console.log(b5);
 import { getdetails, addPayment } from './Payments';
 getdetails();
 addPayment(20);
+
+import Payment from './Payments';
+let payment1 = new Payment(100);
+console.log(payment1);

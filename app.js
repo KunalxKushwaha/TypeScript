@@ -1,4 +1,7 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 function abcd(obj) {
 }
@@ -132,3 +135,6 @@ console.log(b5);
 const Payments_1 = require("./Payments");
 (0, Payments_1.getdetails)();
 (0, Payments_1.addPayment)(20);
+const Payments_2 = __importDefault(require("./Payments"));
+let payment1 = new Payments_2.default(100);
+console.log(payment1);

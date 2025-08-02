@@ -6,3 +6,9 @@ function getdetails() { }
 function addPayment(val) {
     console.log("Payment added: " + val);
 }
+class Payment {
+    constructor(amount) {
+        this.amount = amount;
+    }
+}
+exports.default = Payment;
