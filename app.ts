@@ -181,3 +181,8 @@ addPayment(20);
 import Payment from './Payments';
 let payment1 = new Payment(100);
 console.log(payment1);
+
+//Type Assertion
+let a : any = "Hello";
+(a as String).endsWith("o"); // Type assertion to treat 'a' as a string
+(<number>a).toFixed(2); // Type assertion to treat 'a' as a number

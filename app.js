@@ -138,3 +138,7 @@ const Payments_1 = require("./Payments");
 const Payments_2 = __importDefault(require("./Payments"));
 let payment1 = new Payments_2.default(100);
 console.log(payment1);
+//Type Assertion
+let a = "Hello";
+a.endsWith("o"); // Type assertion to treat 'a' as a string
+a.toFixed(2); // Type assertion to treat 'a' as a number
