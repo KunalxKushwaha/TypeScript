@@ -141,4 +141,6 @@ console.log(payment1);
 //Type Assertion
 let a = "Hello";
 a.endsWith("o"); // Type assertion to treat 'a' as a string
-a.toFixed(2); // Type assertion to treat 'a' as a number
+a; // Type assertion to treat 'a' as a number
+let b = Number("123");
+console.log(b);
