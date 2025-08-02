@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function abcd(obj) {
 }
 abcd({ name: "sushant", age: 23, gender: "male", empId: 101 });
@@ -127,3 +128,7 @@ class Bottle {
 }
 let b5 = new Bottle("Hello");
 console.log(b5);
+//Modules (import/export)
+const Payments_1 = require("./Payments");
+(0, Payments_1.getdetails)();
+(0, Payments_1.addPayment)(20);

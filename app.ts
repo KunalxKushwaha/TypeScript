@@ -167,8 +167,13 @@ halua({name: "Sushant", price: 100, key: "abcjcdhd"});
 //Generics Class
 
 class Bottle <T>{
-    constructor(public key:T){}
+    constructor(public key :T){}
 }
 
 let b5 = new Bottle<string>("Hello");
 console.log(b5);
+
+//Modules (import/export)
+import { getdetails, addPayment } from './Payments';
+getdetails();
+addPayment(20);
