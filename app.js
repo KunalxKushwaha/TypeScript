@@ -159,3 +159,29 @@ function check(a) {
 check("Hello");
 check(123);
 check(true);
+//using instanceof
+class TVkaRemote {
+    switchofftv() {
+        console.log("TV is switched off");
+    }
+}
+class Carkaremote {
+    switchoffcar() {
+        console.log("Car is switched off");
+    }
+}
+const tv = new TVkaRemote();
+const car = new Carkaremote();
+function switchOffDevice(device) {
+    if (device instanceof TVkaRemote) {
+        device.switchofftv();
+    }
+    else if (device instanceof Carkaremote) {
+        device.switchoffcar();
+    }
+    else {
+        throw new Error("Invalid device type");
+    }
+}
+switchOffDevice(tv);
+switchOffDevice(car);
