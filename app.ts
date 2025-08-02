@@ -143,3 +143,9 @@ ABCD("Hello");
 ABCD("Hello", 10);
 
 // Generics...
+function hal<H>(a: H) {
+}
+
+hal<String>("Hello");
+hal<number>(10);
+;
